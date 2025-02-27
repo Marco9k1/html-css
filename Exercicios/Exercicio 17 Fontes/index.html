@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>22/01  26/01  27/01  &#x1f916</h1>
+        <h1>Trabalhando com Fontes</h1>
+        <p>Existem milhares de tipos de fontes, porém nem todas funcionam em qualquer tipo de dispositivo. Então existem as <abbr title="Combinação Segura"><strong>safe combinations</strong></abbr>.</p>
+        <p>Algumas combinações seguras são <strong>Aial</strong>, <strong>Helvetica</strong> e <strong><abbr title="Sem Serifa escrito em Frances ">Sans-Serif</abbr></strong></p>
+        <p>Um site bom para pegar essas combinações é <a href="https://www.w3schools.com/cssref/css_websafe_fonts.php" target="_blank" rel="external">w3schools.com</a></p>
+
+        <h1>Medidas Absolutas e Relativas</h1>
+
+    <p>As fontes possuem medias absolutas e as relativas, sendo elas:</p>
+
+    <ul>
+        <li><strong>Centimetro:</strong> representado por <strong>cm</strong></li>
+        <li><strong>Milimitro:</strong> ... <strong>mm</strong></li>
+        <li><strong>Polegada:</strong> ... <strong>in</strong></li>
+        <li><strong>Pixel:</strong> ... <strong>px</strong></li>
+        <li><strong>Ponto:</strong> ... <strong>pt</strong></li>
+        <li><strong>Paica:</strong> ... <strong>pc</strong></li>
+    </ul>
+
+    <mark style="background-color: red;">OBS:</mark> PT e PC não são recimendaveis, pois não costumam ser utilizados em telas.
+
+    <ul>
+        <li><strong>EM:</strong> medida relativa ao tamanho atual da fonte</li>
+        <li><strong>EX:</strong> relativo a <abbr title="a letra X é geralmente a primeira letra criada nas fontes, fazendo as outras letras e suas variações serem baseadas no seu tamanho.">altura X</abbr> da fonte</li>
+        <li><strong>REM:</strong> relativo a fonte configurada no body</li>
+        <li><strong>VW:</strong> largura da <abbr title="tamanho de tela">viw port</abbr></li>
+        <li><strong>VH:</strong> altura da vew port</li>
+        <li><strong>%</strong></li>
+    </ul>
+
+    <h1>Utilizando tamanhos</h1>
+
+    <p>Para mudar o tamanho das fontes, basta criar no <strong>body</strong> a tag <strong>style</strong> e dentro dela, a função <strong>font-size</strong></p>
+
+    <mark style="background-color: red;">OBS:</mark> o tamanho padrão das fontes é <strong>16px</strong>, e 16px geralmente é igual a 1em
+
+    <p><strong>
+        <mark style="background-color: aqua;">Recomendação:</mark>
+    </strong> usar sempre a opção em, pois ela é em % e abrange mais variedades de telas</p>
+
+    <h1>Peso, Estilo e Shorthand</h1>
+
+    <p>Mudar o peso da font é com a tag font-weight, tendo essas variações:</p>
+
+    <ul>
+        <li><strong>Lighter</strong> sendo a pequena</li>
+        <li><strong>Normal</strong> sendo o tamanho padão</li>
+        <li><strong>Bold</strong> sendo mais grosso</li>
+        <strong>
+            <li>Bolder é o mais grosso de todos, praticamente um Negrito</li>
+        </strong>
+    </ul>
+
+    <p>Mudar o estilo é com a tag <strong>font-style</strong></p>
+
+    <p>E para colocar sublinhado é com a tag <strong>text-decoration</strong></p>
+
+    <p>Também é possivel fazer todas essas configurações somente com a tag <strong>font</strong>. Mas as configurações precisam ser nessa ordem: <strong>font-style</strong> -> <strong>font-weight</strong> -> <strong>font-size</strong> -> <strong>font-family</strong></p>
+    </main>
+
+</body>
+</html>

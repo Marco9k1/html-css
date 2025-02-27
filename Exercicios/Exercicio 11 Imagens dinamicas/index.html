@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Dia 25/08/2024  &#x1F916</h1>
+    <h1>Imagens Dinamicas</h1>
+    <p>Para criar <abbr title="Imagens que se ajustam de acordo com o tamanho da tela">imagens dinamicas</abbr>, usase a tag <strong>PICTURE</strong>.</p>
+    <p><mark style="background-color: aqua;">EX:</mark> Dispositivos com tamanhos diferentes</p>
+    <ul>
+        <li>Computador</li>
+        <li>Celular</li>
+        <li>Tablet</li>
+        <li>Televisão</li>
+    </ul>
+    <p>Depois de usar a tag <strong>PICTURE</strong>, usa-se <strong>SOURCE MIDIA</strong> para determinar de qual a foto que sera usada de acordo com a quantidade de px da pagina</p>
+    <p><mark style="background-color: aqua;">EX:</mark></p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagen flexivel">
+    </picture>
+    <p>pra não perder o costume, vai ai a foto do Zoro</p>
+    <img src="Imagens/ImagemPadrãoZoro.jpg" alt="Zoro padrão">
+</body>
+</html>

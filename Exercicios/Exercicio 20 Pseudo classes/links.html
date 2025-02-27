@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: aqua;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: rgb(0, 106, 106);
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: bisque;
+        }
+
+        a::after{
+            content: [link];
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        .especial{
+            background-color: rgb(95, 138, 248);
+        }
+
+        .especial::after{
+            content: '←';
+        }
+
+        .especial::before{
+            content: '→';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+
+    <p>Pra começar a estilizar os links, posso usar as tags <strong>a:visited</strong> para mudar a aparencia do link quando ja tiver sido visitado, <strong>hover</strong> com a configuração <strong>text-decoration: underline</strong> tira o sublinhado do link, <strong>active</strong> é pra mudar a cor do link quando for clicado, <strong>a::after</strong> é uma opção que adiciona algo logo após o link. E cirando uma <strong>classe</strong> pro link, da pra adicionar um <strong>background-color</strong> nele ou caracteres e quaiquer configurações desejadas</p>
+    <ul>
+        <li><a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" target="_blank" rel="external">Red Dead Redemption 2</a></li>
+        <li><a href="https://store.steampowered.com/app/367520/Hollow_Knight/"target="_blank" rel="external">Hollow Knight</a></li>
+        <li><a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/" target="_blank" rel="external" class="especial">The Witcher 3</a></li>
+    </ul>
+</body>
+</html>
