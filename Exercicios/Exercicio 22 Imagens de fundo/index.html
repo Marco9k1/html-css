@@ -8,28 +8,7 @@
 
         body{
             background-image: url('imagens/wallpaper004.jpg');
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        div.quadrado{
-            display: inline-block;
-            border: 2px solid black;
-            border-radius: 10px;
-            background-color: lightgray;
-            width: 300px;
-            height: 300px;
-        }
-
-        div#q1{
-            background-color: rgba(0, 106, 255, 0.697);
-        }
-
-        div#q2{
-            background-image: linear-gradient(to bottom, yellow, orange, red);
-        }
-
-        div#q3{
-            background-image: url('imagens/pattern001.png');
-        }
+            font-family: Arial, Helvetica, sans-serif;}
     </style>
 </head>
 <body>
@@ -37,7 +16,7 @@
 
     <p>Pra colocar papel de parede, primeiro criamos no <strong>Body</strong> a tag <strong>background-img:url</strong>. Depois coloca <strong>''</strong> e entre eles o diretório da foto que quiser aplicar. </p>
 
-    <p>Tambem é possivel criar areas com fundos diferentes, criando uma <strong>div</strong> e adicionando <strong>classe</strong> e um <strong>id</strong>. Assim basta adicionar as configurações que quiser.
+    <p>Tambem é possivel criar areas com fundos diferentes, criando uma <strong>div</strong> e adicionando <strong>classe</strong> e um <strong>id</strong>. Assim basta adicionar as configurações que quiser. <a href="pagina01.html">Tipo assim</a>
 
     <p>Usando a tag <strong>background-size</strong>, posso mudar o tamanho da imagem de fundo.</p>  
 
@@ -69,14 +48,16 @@
     <p>Pra colocar o wallpaper completo no fundo da tela, existem 2 opções plauziveis. Sendo elas a tag <strong>background-size: contain</strong> que vai esticando ou achatando a imagem para cobrir a tela toda, mas a melhor opção é com a tag <strong>background-size: cover</strong>. Pois essa opção corta a imagem para adequar melhor de acordo com o tamanho da tela. <a href="pagina">Exemplo da tag cover.</a> </p>
 
     <p><strong>Background-attachment: fixed</strong>  serve pra deixar a imagem parada enquanto o site rola pra baixo. E o <strong>Background-attachment: scroll</strong>  faz a imagem rolar junto.</p>
-    <div class="quadrado" id="q1">
 
-    </div>
-    <div class="quadrado" id="q2">
+    <p>Por padrão, todo conteiner possui a posição relativa. Então pra mover ou centralizar, uso a tag <strong>position:absolute</strong>. Com isso posso mudar as direções com as tags <strong>Left</strong> e <strong>Top. <a href="pagina07.html">Tipo assim</a>.</strong>  </p>
 
-    </div>
-    <div class="quadrado" id="q3">
+    <ul>
+        <li><strong>Left:</strong> é a direção do canto da pagina até o outro lado.</li>
 
-    </div>
+        <li><strong>Top:</strong> direção de cima até em baixo</li>
+    </ul>
+
+    <p>Então pra conseguir colocar no centro, usa a tag <strong>transform: translate</strong> e para trazer mais pro meio, usa-se numeros negativos pra trazer pra traz ou pra cima.</p>
+
 </body>
 </html>
