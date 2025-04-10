@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
+        .cnome{
+            background-color: rgb(153, 250, 218);
+        }
+
+        .cgrupo{
+            background-color: lightgray;
+        }
+
+        .cprof{
+            background-color: rgb(253, 210, 217);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercio de Tabela</h1>
+
+    <table>
+        <colgroup>
+                <col class="cnome">
+                <col class="cgrupo" span="2">
+                <col class="cprof">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+
+        <tbody>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana Clara</td>
+                <td>F</td>
+                <td>22</td>
+                <td>Veterinaria</td>
+            </tr>
+            <tr>
+                <td>Marco</td>
+                <td>M</td>
+                <td>23</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>42</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>M</td>
+                <td>22</td>
+                <td>Jardineiro</td>
+            </tr>
+            <tr>
+                <td>Nicole</td>
+                <td>F</td>
+                <td>24</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Ruan</td>
+                <td>M</td>
+                <td>22</td>
+                <td>Garçom</td>
+            </tr>
+            <tr>
+                <td>Gabriel</td>
+                <td>M</td>
+                <td>21</td>
+                <td>Vendedor</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><a href="index.html">Voltar</a></p>
+</body>
+</html>
