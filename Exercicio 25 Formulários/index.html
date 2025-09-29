@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html lang="pt-bt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+        <style>
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Formulário Básico</h1>
+        <p>Sempre que criar um formulário, ele deve estar entre as tags <strong>FORM</strong> e <strong>/FORM</strong>. E para começar a criar os formulários, primeiro escolhe o nome da caixa que será preenchida, e para criar a caixa, uso a tag <strong>INPUT</strong> do tipo <strong>TEXT</strong>.</p>
+        <p>Para criar o botão de enviar, também é com a tag <strong>INPUT</strong>, só que com a configuração <strong>SUBMIT</strong></p>
+        <p>Pra desligar a caixa de auto-completar, é só colocar na tag <strong>FORM </strong>a configuração <strong>AUTOCOMPLEAT:OFF</strong></p>
+
+        <h1>Configurações do formulário</h1>
+        <p>O formulário presica ter algum lugar para ser enviado, então na tag <strong>FORM</strong>, coloco a configuração <strong>ACTION</strong> e escolher pra qual lugar vai <strong>(ex: cadastro.php)</strong></p>
+        <p>Pra criar conecção entre o nome com a caixa dele, é só envelopar com a tag <strong>LABEL</strong> e informar o nome colocado no <strong>ID</strong> da caixa.</p>
+
+        <mark style="background-color: rgba(0, 255, 255, 0.486);">EX:</mark>
+
+        <form action="cadastro.php" autocomplete="off">
+            <p><label for="inome">Nome:</label> 
+                  <input type="text" name="nome" id="inome"></p>
+            <p><label for="isobrenome">Sobrenome:</label> 
+                  <input type="text" name="sobrenome" id="isobrenome"></p>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+    </body>
+    </html>
+</body>
+</html>
