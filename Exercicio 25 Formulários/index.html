@@ -20,6 +20,13 @@
         <p>O formulário presica ter algum lugar para ser enviado, então na tag <strong>FORM</strong>, coloco a configuração <strong>ACTION</strong> e escolher pra qual lugar vai <strong>(ex: cadastro.php)</strong></p>
         <p>Pra criar conecção entre o nome com a caixa dele, é só envelopar com a tag <strong>LABEL</strong> e informar o nome colocado no <strong>ID</strong> da caixa.</p>
 
+        <p>Por padrão, existem duas formas de envio de formulários:</p>
+            <ul>
+                <li>O padrão sendo o <strong>GET</strong> que é o básico e coloca os dados aparecendo na <strong>URL</strong> do site. Possui limitador de 3 mil KB e não é possivel enviar arquivos ou imagens por ele.</li>
+                <li> E também tem o <strong>POST</strong> que ainda não é a melhor opção, mas pelo menos ja deixa um pouco mais dificil de ver os dados do usuario. Melhor usar pra quando for um formulário com mais de 3 mil KB ou informações mais intimas, como senhas, cartões, etc</li>
+            </ul>
+            
+
         <mark style="background-color: rgba(0, 255, 255, 0.486);">EX:</mark>
 
         <form action="cadastro.php" autocomplete="off">
